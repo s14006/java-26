@@ -30,9 +30,9 @@ public class Ex1 {
 	public static void main(String[] args){
 		Ex a;
 		a = new Ex1_0();
-	//	a.execute();
+  	a.execute();
 		a = new Ex1_2();
-//		a.execute();
+		a.execute();
 		a = new Ex1_1();
 		a.execute();
 	}
