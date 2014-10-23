@@ -105,10 +105,10 @@ class Ex2_5 extends Ex{
 		Scanner stdIn = new Scanner(System.in);
 
 		System.out.print("ｘの値をください(・・;)");
-		int x = stdIn.nextInt();
+		double x = stdIn.nextDouble();
 
 		System.out.print("yの値もくれるといいな(*´∀｀)");
-		int y = stdIn.nextInt();
+		double y = stdIn.nextDouble();
 
 		System.out.println("ふたつの和は" + (x + y) + "だそうで");
 		System.out.println("ついでにいうと平均は" + (x + y)/2 + "って言ってました。");
@@ -119,12 +119,10 @@ class Ex2_5 extends Ex{
 class Ex2_6 extends Ex{
 	void execute(){
 		Scanner stdIn = new Scanner(System.in);
-
-		System.out.print("底辺の値は?");
-		int width = stdIn.nextInt();
-
-		System.out.print("高さの値は?");
-		int height = stdIn.nextInt();
+	 	System.out.print("底辺の値は?"); 
+		double width = stdIn.nextDouble();
+	 	System.out.print("高さの値は?");
+		double height = stdIn.nextDouble();
 
 		System.out.println("あなたが作ろうとしているCFの面積は" + width * height /2 + "ですねｗ");
 		System.out.println("");
