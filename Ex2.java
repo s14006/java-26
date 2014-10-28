@@ -205,12 +205,12 @@ public class Ex2{
 //		a.execute();
 //		a = new Ex2_6();
 //		a.execute();
-//		a = new Ex2_000();
-//		a.execute();
-//		a = new Ex2_7();
-//		a.execute();
-//		a = new Ex2_8();
-//		a.execute();
+		a = new Ex2_000();
+		a.execute();
+		a = new Ex2_7();
+		a.execute();
+		a = new Ex2_8();
+		a.execute();
 		a = new Ex2_9();
 		a.execute();
 		}
