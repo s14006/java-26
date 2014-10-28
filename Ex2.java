@@ -129,24 +129,89 @@ class Ex2_6 extends Ex{
 	}
 }
 
-public class Ex2 {
+class Ex2_000 extends Ex{
+	void execute(){
+		Random rand = new Random();
+		
+		int lucky = rand.nextInt(10);
+
+		System.out.println("今日のラッキーナンバーは" + lucky + "です。");
+	}
+
+}
+
+class Ex2_7 extends Ex{
+	void execute(){
+		Random rand = new Random();
+
+		int num = rand.nextInt(10);
+		int numbars = rand.nextInt(90);
+
+		System.out.println("正の整数値は" + num + "です。");
+		System.out.println("負の整数値は" + (num - 11) + "です。");
+		System.out.println("2桁の整数値は" + (num + 10) + "です。");
+	}
+}
+
+class Ex2_8 extends Ex{
+	void execute(){
+		Random rand = new Random();	
+		Scanner stdIn = new Scanner(System.in);
+
+		int ran = rand.nextInt(11) - 6;
+
+		System.out.println("テキトーに数字をくださいな");
+		int num = stdIn.nextInt();
+
+		System.out.println(num + ran);
+	}
+}
+
+class Ex2_9 extends Ex{
+	void execute(){
+		Random rand = new Random();
+
+		int ran = rand.nextInt(10);	
+		double num = rand.nextDouble();		
+
+		System.out.println(num);
+		System.out.println(num * 10);
+		if(ran > 5){
+			System.out.println(num);
+		}else{
+			System.out.println(-num);
+		}
+	}
+}
+
+
+
+public class Ex2{
 	public static void main(String[] args){
 		Ex a;{
-		a = new Ex2_0();
-		a.execute();
-		a = new Ex2_1();
-		a.execute();
-		a = new Ex2_2();
-		a.execute();
-		a = new Ex2_00();
-		a.execute();
-		a = new Ex2_3();
-		a.execute();
-		a = new Ex2_4();
-		a.execute();
-		a = new Ex2_5();
-		a.execute();
-		a = new Ex2_6();
+//		a = new Ex2_0();
+//		a.execute();
+//		a = new Ex2_1();
+//		a.execute();
+//		a = new Ex2_2();
+//		a.execute();
+//		a = new Ex2_00();
+//		a.execute();
+//		a = new Ex2_3();
+//		a.execute();
+//		a = new Ex2_4();
+//		a.execute();
+//		a = new Ex2_5();
+//		a.execute();
+//		a = new Ex2_6();
+//		a.execute();
+//		a = new Ex2_000();
+//		a.execute();
+//		a = new Ex2_7();
+//		a.execute();
+//		a = new Ex2_8();
+//		a.execute();
+		a = new Ex2_9();
 		a.execute();
 		}
 	}
