@@ -230,7 +230,7 @@ public class Ex2{
 		a.execute();
 		a = new Ex2_10();
 		
-		a.execute();
+	a.execute();
 		}
 	}
 }
