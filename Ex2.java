@@ -184,6 +184,21 @@ class Ex2_9 extends Ex{
 	}
 }
 
+class Ex2_10 extends Ex{
+	void execute(){
+		Scanner std = new Scanner(System.in);
+
+		System.out.print("姓:");
+		String lastname = std.next();
+
+		System.out.print("名:");
+		String firstname = std.next();
+
+		System.out.println("こんにちは" + lastname + firstname + "さん");
+	
+	}
+
+}
 
 
 public class Ex2{
@@ -212,6 +227,9 @@ public class Ex2{
 		a = new Ex2_8();
 		a.execute();
 		a = new Ex2_9();
+		a.execute();
+		a = new Ex2_10();
+		
 		a.execute();
 		}
 	}
