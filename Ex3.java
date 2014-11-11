@@ -10,50 +10,107 @@ class Ex3{
 
 	public int ex3_1(int n){
 		
-		return -1;
+		return Math.abs(n);
 
 	}
 
 	public String ex3_2(int a, int b){
 
-		return "dummy";
+		if(a % b == 0){
+			return b + "は" + a + "の約数です";
+		}else{
+			return b + "は" + a + "の約数ではありません";
+		}
 	}
 
 	public String ex3_3(int a, int b){
 
-		return "dummy";
+		if(a > b){
+			return a + "の方が大きいです";
+		}else if(b > a){
+			return b + "の方が大きいです";
+		}else{
+			return "同じ値です";
+		}
 
 	}
 
 	public String ex3_4(int a){
-
-		return "dummy";
+		
+		if(a > 0){
+			if(a % 5 == 0){
+				return "その値は5で割り切れます";
+			}else{
+				return "その値は5で割り切れません";
+			}
+		}else{
+			return "正でない整数値です";
+		}
 
 	}
 
 	public String ex3_5(int a){
 
-		return "dummy";
+		if(a > 0){
+			if(a % 10 == 0){
+				return "その値は10の倍数です";
+			}else{
+				return "その値は10の倍数ではありません";
+			}
+		}else{
+			return "正でない整数値です";
+		}
 	}
 	
 	public String ex3_6(int a){
-		return "dummy";
+		if(a > 0){
+			if(a % 3 == 0){
+				return "その値は3で割り切れます";
+			}else if(a % 3 == 1){
+				return "その値を3で割った余りは1です";
+			}else{
+				return "その値を3で割った余りは2です";
+			}
+		}else{
+			return "正でない整数値です";
+		}
 	}
 
 	public String ex3_7(int a){
-		return "dummy";
+		if(a > 100){
+			return "範囲(0～100)外の値です";
+		}else if(a > 79){
+			return "優";
+		}else if(a > 69){
+			return "良";
+		}else if(a > 59){
+			return "可";
+		}else if(a > -1){
+			return "不可";
+		}else{
+			return "範囲(0～100)外の値です";
+		}
 	}
 
 	public double ex3_8(double a, double b){
-		return -1.0;
+		if(a > b){
+			return a;
+		}else{
+			return b;
+		}
 	}
 
 	public int ex3_9(int a, int b){
-		return 0;
+		return Math.abs(a - b);
 	}
 
 	public String ex3_10(int a, int b){
-		return "dummy";
+		int x = Math.abs(a - b);
+		if(x > 10){
+			return "それらの差は11以上です";
+		}else{
+			return "それらの差は10以下です";
+		}
 	}
 }
 
